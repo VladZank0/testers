@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testers</title>
+    <link rel="stylesheet" href="css/nullstyle.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=a78d6383-6f0c-4253-ad57-ddf2ebdb2c65&lang=en_US"></script>
+    <script defer src="./assets/js/handlers.js"></script>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="#" class="logo logo_mobile">
+                    <img src="../images/logo.svg" alt="" width="178" height="56">
+                </a>
+                <div class="header-top">
+                    <div class="networks-group">
+                        <a class="networks-group__item" href="#">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="24" height="24" fill="white"/>
+                                <g clip-path="url(#clip0_309_9165)">
+                                <path d="M9.68805 13.886L9.3903 18.074C9.81631 18.074 10.0008 17.891 10.2221 17.6713L12.2194 15.7625L16.358 18.7933C17.117 19.2163 17.6517 18.9935 17.8565 18.095L20.5731 5.36605C20.8139 4.24405 20.168 3.80456 19.4285 4.0798L3.46065 10.193C2.37088 10.616 2.38738 11.2235 3.2754 11.4988L7.35775 12.7685L16.8403 6.83529C17.2865 6.53979 17.6923 6.70329 17.3585 6.99879L9.68805 13.886Z" fill="black"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_309_9165">
+                                <rect width="20" height="15" fill="white" transform="translate(2 4)"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                        <a class="networks-group__item" href="#">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="24" height="24" fill="white"/>
+                                <g clip-path="url(#clip0_309_9169)">
+                                <path d="M4.26923 8.70284C4.49006 8.85866 5.15569 9.32146 6.26619 10.091C7.37672 10.8605 8.22746 11.4531 8.81845 11.8686C8.88338 11.9142 9.02133 12.0132 9.23236 12.1658C9.44343 12.3185 9.61879 12.4419 9.75835 12.5361C9.898 12.6302 10.0668 12.7357 10.265 12.8526C10.4631 12.9693 10.6498 13.0572 10.8252 13.1153C11.0005 13.1739 11.1629 13.203 11.3122 13.203H11.3319C11.4812 13.203 11.6436 13.1739 11.819 13.1153C11.9942 13.0572 12.1812 12.9692 12.3791 12.8526C12.5771 12.7356 12.7459 12.6301 12.8856 12.5361C13.0252 12.4419 13.2004 12.3185 13.4117 12.1658C13.6226 12.013 13.7607 11.9142 13.8257 11.8686C14.423 11.4531 15.9428 10.3977 18.3845 8.70264C18.8586 8.37157 19.2547 7.9721 19.5728 7.50448C19.8913 7.03708 20.0503 6.54674 20.0503 6.03375C20.0503 5.60507 19.896 5.23811 19.5874 4.93292C19.279 4.62765 18.9137 4.4751 18.4916 4.4751H4.15231C3.65228 4.4751 3.26748 4.64392 2.99797 4.98157C2.72849 5.31929 2.59375 5.74142 2.59375 6.24792C2.59375 6.65706 2.7724 7.1004 3.12953 7.57771C3.48663 8.05504 3.86665 8.43012 4.26923 8.70284Z" fill="black"/>
+                                <path d="M19.076 9.74566C16.9461 11.1872 15.3288 12.3076 14.225 13.1065C13.8548 13.3792 13.5545 13.592 13.3239 13.7445C13.0933 13.8971 12.7866 14.0529 12.4034 14.212C12.0203 14.3713 11.6632 14.4506 11.332 14.4506H11.3123C10.9811 14.4506 10.6238 14.3713 10.2407 14.212C9.85763 14.0529 9.55073 13.8971 9.32018 13.7445C9.0897 13.592 8.78931 13.3792 8.41918 13.1065C7.54241 12.4636 5.92862 11.3432 3.57773 9.74566C3.20746 9.49904 2.8795 9.21636 2.59375 8.89819V16.6327C2.59375 17.0615 2.7463 17.4282 3.05157 17.7335C3.35677 18.0388 3.72377 18.1914 4.15241 18.1914H18.4918C18.9203 18.1914 19.2873 18.0388 19.5925 17.7335C19.8978 17.4281 20.0503 17.0616 20.0503 16.6327V8.89819C19.771 9.20977 19.4464 9.49246 19.076 9.74566Z" fill="black"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_309_9169">
+                                <rect width="19" height="15" fill="white" transform="translate(2 4)"/>
+                                </clipPath>
+                                </defs>
+                            </svg>                                
+                        </a>
+                    </div>
+                    <div class="header-links">
+                        <a class="link-btn" href="email:Infomail@mail.com">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.3334 4.99992C18.3334 4.08325 17.5834 3.33325 16.6667 3.33325H3.33335C2.41669 3.33325 1.66669 4.08325 1.66669 4.99992M18.3334 4.99992V14.9999C18.3334 15.9166 17.5834 16.6666 16.6667 16.6666H3.33335C2.41669 16.6666 1.66669 15.9166 1.66669 14.9999V4.99992M18.3334 4.99992L10 10.8333L1.66669 4.99992" stroke="#1E1E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span class="link-btn__text">
+                                Infomail@mail.com
+                            </span>
+                        </a>
+                        <a class="link-btn" href="tel:+79990000000">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_309_9181)">
+                                <path d="M18.3333 14.0999V16.5999C18.3343 16.832 18.2867 17.0617 18.1937 17.2744C18.1008 17.487 17.9644 17.6779 17.7934 17.8348C17.6224 17.9917 17.4205 18.1112 17.2006 18.1855C16.9808 18.2599 16.7478 18.2875 16.5167 18.2666C13.9523 17.988 11.4892 17.1117 9.32498 15.7083C7.31151 14.4288 5.60443 12.7217 4.32499 10.7083C2.91663 8.53426 2.04019 6.05908 1.76665 3.48325C1.74583 3.25281 1.77321 3.02055 1.84707 2.80127C1.92092 2.58199 2.03963 2.38049 2.19562 2.2096C2.35162 2.03871 2.54149 1.90218 2.75314 1.80869C2.9648 1.7152 3.1936 1.6668 3.42499 1.66658H5.92498C6.32941 1.6626 6.72148 1.80582 7.02812 2.06953C7.33476 2.33324 7.53505 2.69946 7.59165 3.09992C7.69717 3.89997 7.89286 4.68552 8.17499 5.44158C8.2871 5.73985 8.31137 6.06401 8.24491 6.37565C8.17844 6.68729 8.02404 6.97334 7.79998 7.19992L6.74165 8.25825C7.92795 10.3445 9.65536 12.072 11.7417 13.2583L12.8 12.1999C13.0266 11.9759 13.3126 11.8215 13.6243 11.755C13.9359 11.6885 14.26 11.7128 14.5583 11.8249C15.3144 12.107 16.0999 12.3027 16.9 12.4083C17.3048 12.4654 17.6745 12.6693 17.9388 12.9812C18.203 13.2931 18.3435 13.6912 18.3333 14.0999Z" stroke="#1E1E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_309_9181">
+                                <rect width="20" height="20" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                            <span class="link-btn__text">
+                                +7 (999)-000-00-00
+                            </span>
+                        </a>
+                    </div>
+                    
+                </div>
+                <div class="header-bottom">
+                    <a href="#" class="logo">
+                        <img src="../images/logo.svg" alt="" width="178" height="56">
+                    </a>
+                    <nav class="header-nav">
+                        <ul class="nav-list nav-list_row">
+                            <li><a href="#" class="nav-link">Services</a></li>
+                            <li><a href="#" class="nav-link active">News</a></li>
+                            <li><a href="#" class="nav-link">Blog</a></li>
+                            <li><a href="#" class="nav-link">About Us</a></li>
+                            <li><a href="#" class="nav-link">Awards</a></li>
+                            <li><a href="#" class="nav-link">Teams</a></li>
+                            <li><a href="#" class="nav-link">Career</a></li>
+                            <li><a href="#" class="nav-link">Reviews</a></li>
+                            <li><a href="#" class="nav-link">Contacts</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <button class="header-burger">
+                    <svg class="burger-btn" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.5 18H25.5M10.5 13H25.5M10.5 23H25.5" stroke="#1E1E1E" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <svg class="close-burger-btn" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M25 15L15 25M15 15L25 25" stroke="#1E1E1E" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                            
+                </button>
+            </div>
+        </div>
+        
+    </header>
+
+    <div class="mobile-nav">
+        <div class="mobile-nav__column">
+            <nav class="mobile-nav__list">
+                <ul class="nav-list">
+                    <li><a href="#" class="nav-link">Services</a></li>
+                    <li><a href="#" class="nav-link active">News</a></li>
+                    <li><a href="#" class="nav-link">Blog</a></li>
+                    <li><a href="#" class="nav-link">About Us</a></li>
+                    <li><a href="#" class="nav-link">Awards</a></li>
+                    <li><a href="#" class="nav-link">Teams</a></li>
+                    <li><a href="#" class="nav-link">Career</a></li>
+                    <li><a href="#" class="nav-link">Reviews</a></li>
+                    <li><a href="#" class="nav-link">Contacts</a></li>
+                </ul>
+            </nav>
+            <div class="networks-group">
+                <a class="networks-group__item" href="#">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="24" height="24" fill="white"/>
+                        <g clip-path="url(#clip0_309_9165)">
+                        <path d="M9.68805 13.886L9.3903 18.074C9.81631 18.074 10.0008 17.891 10.2221 17.6713L12.2194 15.7625L16.358 18.7933C17.117 19.2163 17.6517 18.9935 17.8565 18.095L20.5731 5.36605C20.8139 4.24405 20.168 3.80456 19.4285 4.0798L3.46065 10.193C2.37088 10.616 2.38738 11.2235 3.2754 11.4988L7.35775 12.7685L16.8403 6.83529C17.2865 6.53979 17.6923 6.70329 17.3585 6.99879L9.68805 13.886Z" fill="black"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_309_9165">
+                        <rect width="20" height="15" fill="white" transform="translate(2 4)"/>
+                        </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+                <a class="networks-group__item" href="#">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="24" height="24" fill="white"/>
+                        <g clip-path="url(#clip0_309_9169)">
+                        <path d="M4.26923 8.70284C4.49006 8.85866 5.15569 9.32146 6.26619 10.091C7.37672 10.8605 8.22746 11.4531 8.81845 11.8686C8.88338 11.9142 9.02133 12.0132 9.23236 12.1658C9.44343 12.3185 9.61879 12.4419 9.75835 12.5361C9.898 12.6302 10.0668 12.7357 10.265 12.8526C10.4631 12.9693 10.6498 13.0572 10.8252 13.1153C11.0005 13.1739 11.1629 13.203 11.3122 13.203H11.3319C11.4812 13.203 11.6436 13.1739 11.819 13.1153C11.9942 13.0572 12.1812 12.9692 12.3791 12.8526C12.5771 12.7356 12.7459 12.6301 12.8856 12.5361C13.0252 12.4419 13.2004 12.3185 13.4117 12.1658C13.6226 12.013 13.7607 11.9142 13.8257 11.8686C14.423 11.4531 15.9428 10.3977 18.3845 8.70264C18.8586 8.37157 19.2547 7.9721 19.5728 7.50448C19.8913 7.03708 20.0503 6.54674 20.0503 6.03375C20.0503 5.60507 19.896 5.23811 19.5874 4.93292C19.279 4.62765 18.9137 4.4751 18.4916 4.4751H4.15231C3.65228 4.4751 3.26748 4.64392 2.99797 4.98157C2.72849 5.31929 2.59375 5.74142 2.59375 6.24792C2.59375 6.65706 2.7724 7.1004 3.12953 7.57771C3.48663 8.05504 3.86665 8.43012 4.26923 8.70284Z" fill="black"/>
+                        <path d="M19.076 9.74566C16.9461 11.1872 15.3288 12.3076 14.225 13.1065C13.8548 13.3792 13.5545 13.592 13.3239 13.7445C13.0933 13.8971 12.7866 14.0529 12.4034 14.212C12.0203 14.3713 11.6632 14.4506 11.332 14.4506H11.3123C10.9811 14.4506 10.6238 14.3713 10.2407 14.212C9.85763 14.0529 9.55073 13.8971 9.32018 13.7445C9.0897 13.592 8.78931 13.3792 8.41918 13.1065C7.54241 12.4636 5.92862 11.3432 3.57773 9.74566C3.20746 9.49904 2.8795 9.21636 2.59375 8.89819V16.6327C2.59375 17.0615 2.7463 17.4282 3.05157 17.7335C3.35677 18.0388 3.72377 18.1914 4.15241 18.1914H18.4918C18.9203 18.1914 19.2873 18.0388 19.5925 17.7335C19.8978 17.4281 20.0503 17.0616 20.0503 16.6327V8.89819C19.771 9.20977 19.4464 9.49246 19.076 9.74566Z" fill="black"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_309_9169">
+                        <rect width="19" height="15" fill="white" transform="translate(2 4)"/>
+                        </clipPath>
+                        </defs>
+                    </svg>                                
+                </a>
+            </div>
+            <div class="header-links header-links_mobile">
+                <a class="link-btn" href="email:Infomail@mail.com">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.3334 4.99992C18.3334 4.08325 17.5834 3.33325 16.6667 3.33325H3.33335C2.41669 3.33325 1.66669 4.08325 1.66669 4.99992M18.3334 4.99992V14.9999C18.3334 15.9166 17.5834 16.6666 16.6667 16.6666H3.33335C2.41669 16.6666 1.66669 15.9166 1.66669 14.9999V4.99992M18.3334 4.99992L10 10.8333L1.66669 4.99992" stroke="#1E1E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span class="link-btn__text">
+                        Infomail@mail.com
+                    </span>
+                </a>
+                <a class="link-btn" href="tel:+79990000000">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_309_9181)">
+                        <path d="M18.3333 14.0999V16.5999C18.3343 16.832 18.2867 17.0617 18.1937 17.2744C18.1008 17.487 17.9644 17.6779 17.7934 17.8348C17.6224 17.9917 17.4205 18.1112 17.2006 18.1855C16.9808 18.2599 16.7478 18.2875 16.5167 18.2666C13.9523 17.988 11.4892 17.1117 9.32498 15.7083C7.31151 14.4288 5.60443 12.7217 4.32499 10.7083C2.91663 8.53426 2.04019 6.05908 1.76665 3.48325C1.74583 3.25281 1.77321 3.02055 1.84707 2.80127C1.92092 2.58199 2.03963 2.38049 2.19562 2.2096C2.35162 2.03871 2.54149 1.90218 2.75314 1.80869C2.9648 1.7152 3.1936 1.6668 3.42499 1.66658H5.92498C6.32941 1.6626 6.72148 1.80582 7.02812 2.06953C7.33476 2.33324 7.53505 2.69946 7.59165 3.09992C7.69717 3.89997 7.89286 4.68552 8.17499 5.44158C8.2871 5.73985 8.31137 6.06401 8.24491 6.37565C8.17844 6.68729 8.02404 6.97334 7.79998 7.19992L6.74165 8.25825C7.92795 10.3445 9.65536 12.072 11.7417 13.2583L12.8 12.1999C13.0266 11.9759 13.3126 11.8215 13.6243 11.755C13.9359 11.6885 14.26 11.7128 14.5583 11.8249C15.3144 12.107 16.0999 12.3027 16.9 12.4083C17.3048 12.4654 17.6745 12.6693 17.9388 12.9812C18.203 13.2931 18.3435 13.6912 18.3333 14.0999Z" stroke="#1E1E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_309_9181">
+                        <rect width="20" height="20" fill="white"/>
+                        </clipPath>
+                        </defs>
+                    </svg>
+                    <span class="link-btn__text">
+                        +7 (999)-000-00-00
+                    </span>
+                </a>
+            </div>
+        </div>    
+    </div> 
+
+<section class="hero">
+    <img class="hero__img" src="../images/hero/main-page.png" alt="fon">
+    <div class="container hero__container">
+        <div class="hero__main">
+            <h1 class="hero__title">Full cycle of software testing</h1>
+            <p class="hero__text">We have been strengthening your product through thorough testing and debugging of all systems since 2010!</p>
+        </div>
+        <button class="btn">CHECK YOUR PROJECT</button>
+    </div>
+</section>
+<section class="section">
+    <div class="container">
+        <div class="image-block">
+            <div class="article-text image-block-grid">
+                <img class="image-block-grid__img" src="../images/image-blocks/img-1.png">
+                <div class="div div_heading">
+                    <h3>Our company is your reliable partner</h3>
+                    <p>in the world of software testing</p>
+                </div>
+                <div class="div div_content">
+                    <p>Our team consists of experienced professionals who strive to ensure the high quality and reliability of your products.</p>
+                    <p>Since our foundation, our goal has been to help companies minimize risks and improve user experience. We understand that in today's digital world, software stability and security play a crucial role, which is why we offer a wide range of testing services!</p>
+                    <p>We are proud to work with clients from various industries, from startups to large corporations. Let's work together to make your software flawless! Contact us and we will tell you how we can help you achieve your goals.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="container section__container">
+        <div class="advantage-slider slider">
+            <svg class="swipe-icon" width="62" height="62" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_341_8908)">
+                <path d="M33.6633 17.2807L30.6531 18.12C30.0967 16.1241 28.7701 14.431 26.9653 13.4132C25.1606 12.3954 23.0254 12.1362 21.0295 12.6926C19.0336 13.2491 17.3405 14.5756 16.3227 16.3804C15.3049 18.1852 15.0457 20.3204 15.6022 22.3163L12.592 23.1555C11.8129 20.3613 12.1758 17.372 13.6007 14.8453C15.0257 12.3187 17.396 10.4615 20.1902 9.68245C22.9844 8.90339 25.9737 9.26625 28.5004 10.6912C31.0271 12.1161 32.8843 14.4865 33.6633 17.2807Z" fill="white"/>
+                <path d="M44.1262 25.7182C43.3494 25.9378 42.6442 26.3582 42.0816 26.9371C41.4964 26.4066 40.7866 26.0326 40.0182 25.8498C39.2498 25.6671 38.4476 25.6814 37.6862 25.8916C36.9094 26.1112 36.2042 26.5316 35.6416 27.1105C34.8538 26.4015 33.8489 25.9805 32.7911 25.916C31.7332 25.8516 30.6847 26.1475 29.8166 26.7556L27.6429 18.9592C27.3091 17.7617 26.5131 16.7458 25.4303 16.1351C24.3474 15.5244 23.0663 15.3689 21.8687 15.7028C20.6712 16.0367 19.6554 16.8326 19.0447 17.9155C18.434 18.9983 18.2785 20.2794 18.6124 21.477L23.2703 38.1835L19.2761 36.8316C18.3469 36.4731 17.3262 36.4274 16.3687 36.7014C15.4725 36.9489 14.6701 37.4572 14.0636 38.1619C13.4571 38.8666 13.0739 39.7357 12.9626 40.6587C12.8513 41.5817 13.0171 42.517 13.4387 43.3456C13.8604 44.1743 14.5189 44.8588 15.3306 45.3121L30.4347 52.9423C32.5647 53.9928 35.008 54.2186 37.2945 53.5764L44.82 51.4782C47.6142 50.6992 49.9845 48.842 51.4095 46.3153C52.8344 43.7886 53.1973 40.7994 52.4182 38.0051L49.9004 28.9746C49.5665 27.777 48.7706 26.7612 47.6877 26.1505C46.6049 25.5398 45.3238 25.3843 44.1262 25.7182ZM49.408 38.8444C49.9645 40.8403 49.7053 42.9755 48.6875 44.7803C47.6697 46.585 45.9766 47.9116 43.9807 48.468L36.4552 50.5662C34.939 51.0088 33.3136 50.8855 31.8815 50.2193L16.8527 42.5682C16.4965 42.3654 16.2342 42.0307 16.1225 41.6363C16.0445 41.3568 16.046 41.0611 16.1266 40.7823C16.2073 40.5036 16.364 40.2528 16.5791 40.0581C16.7943 39.8634 17.0594 39.7325 17.3448 39.68C17.6302 39.6274 17.9245 39.6554 18.1949 39.7608L27.8751 43.0636L21.6226 20.6377C21.5113 20.2385 21.5631 19.8115 21.7667 19.4505C21.9702 19.0896 22.3088 18.8243 22.708 18.713C23.1072 18.6017 23.5342 18.6535 23.8952 18.8571C24.2561 19.0607 24.5215 19.3993 24.6327 19.7984L29.2487 36.3545L32.2589 35.5152L31 31C30.8887 30.6008 30.9405 30.1737 31.1441 29.8128C31.3477 29.4518 31.6863 29.1865 32.0855 29.0752C32.4846 28.9639 32.9117 29.0158 33.2726 29.2193C33.6336 29.4229 33.8989 29.7615 34.0102 30.1607L35.2691 34.676L38.2793 33.8367L37.44 30.8265C37.3287 30.4273 37.3806 30.0003 37.5841 29.6393C37.7877 29.2784 38.1263 29.0131 38.5255 28.9018C38.9247 28.7905 39.3517 28.8423 39.7127 29.0459C40.0736 29.2495 40.3389 29.5881 40.4502 29.9873L41.2895 32.9974L44.2997 32.1582L43.88 30.6531C43.7687 30.2539 43.8206 29.8269 44.0241 29.4659C44.2277 29.105 44.5663 28.8396 44.9655 28.7284C45.3647 28.6171 45.7917 28.6689 46.1527 28.8725C46.5136 29.076 46.7789 29.4146 46.8902 29.8138L49.408 38.8444Z" fill="white"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_341_8908">
+                <rect width="50" height="50" fill="white" transform="translate(0.204346 13.6326) rotate(-15.5789)"/>
+                </clipPath>
+                </defs>
+            </svg>
+            <div class="swiper-wrapper advantage-slider__wrapper">
+                <div class="swiper-slide">
+                    <a href="" class="advantage-card">
+                        <img class="advantage-card__img" src="../images/advantage-slider/img1.png" alt="fon">
+                        <div class="advantage-card__content">
+                            <div class="advantage-card__title">Full testing cycle</div>
+                            <div class="advantage-card__text">Our company offers comprehensive software testing, which guarantees a thorough check of all systems. We cover all stages of development, allowing you to identify and eliminate errors at early stages, which significantly reduces the risks for your product.</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="" class="advantage-card">
+                        <img class="advantage-card__img" src="../images/advantage-slider/img2.png" alt="fon">
+                        <div class="advantage-card__content">
+                            <div class="advantage-card__title">Experienced team</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="" class="advantage-card">
+                        <img class="advantage-card__img" src="../images/advantage-slider/img3.png" alt="fon">
+                        <div class="advantage-card__content">
+                            <div class="advantage-card__title">Individual approach</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="" class="advantage-card">
+                        <img class="advantage-card__img" src="../images/advantage-slider/img3.png" alt="fon">
+                        <div class="advantage-card__content">
+                            <div class="advantage-card__title">Individual approach</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="" class="advantage-card">
+                        <img class="advantage-card__img" src="../images/advantage-slider/img4.png" alt="fon">
+                        <div class="advantage-card__content">
+                            <div class="advantage-card__title">Update UX</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="slider-float-btn slider-float-btn_mob_hidden advantage-slider__btn swiper-button-next">
+                <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.0727 6.14546L35.9272 26L16.0727 45.8546" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <div class="slider-float-btn slider-float-btn_mob_hidden advantage-slider__btn swiper-button-prev">
+                <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M35.9273 45.8545L16.0728 26L35.9273 6.14545" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <div class="slider-navigation">
+                <div class="swiper-pagination"></div>
+                <div class="slider-buttons">
+                    <div class="slider-btn advantage-slider__btn swiper-button-prev">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.6666 8.00002L3.33329 8.00002M3.33329 8.00002L7.99996 12.6667M3.33329 8.00002L7.99996 3.33335" stroke="#3C3C43" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>   
+                        Back
+                    </div>
+                    <div class="slider-btn advantage-slider__btn swiper-button-next">
+                        Next 
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.33337 7.99998L12.6667 7.99998M12.6667 7.99998L8.00004 3.33331M12.6667 7.99998L8.00004 12.6666" stroke="#3C3C43" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="container">
+        <div class="image-block">
+            <div class="article-text image-block-grid image-block-grid_heading_top">
+                <img class="image-block-grid__img" src="../images/image-blocks/img-2.png">
+                <div class="div div_heading">
+                    <h3>What we test</h3>
+                </div>
+                <div class="div div_content">
+                    <div class="div div_small-gap">
+                        <h4>First point</h4>
+                        <p>Our team consists of experienced professionals who are committed to ensuring the high quality and reliability of your products.</p>
+                    </div>
+                    <div class="div div_small-gap">
+                        <h4>Second point</h4>
+                        <p>Our team consists of experienced professionals who are committed to ensuring the high quality and reliability of your products.</p>
+                    </div>
+                    <div class="div div_small-gap">
+                        <h4>Third point</h4>
+                        <p>Our team consists of experienced professionals who are committed to ensuring the high quality and reliability of your products.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="container">
+        <div class="image-block">
+            <div class="article-text image-block-grid image-block-grid_reverse">
+                <img class="image-block-grid__img" src="../images/image-blocks/img-3.png">
+                <h4>Benefits that will be available to you when using our services</h4>
+                <div class="div div_content">
+                    <div class="faq faq_clean">
+                        <div class="faq-qroup faq-qroup_clean">
+                            <p class="faq-question faq-question_reverse">
+                                Functional testing
+                                <svg class="faq-question__icon" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1.5L6 6.5L11 1.5" stroke="#1E1E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </p>
+                            <div class="faq-answer">
+                                <div class="faq-answer__inner"  >
+                                    <div class="faq-answer__text">
+                                        <p class="body-base">
+                                            Answer the frequently asked question in a simple sentence, a longish paragraph, or even in a list.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-qroup faq-qroup_clean">
+                            <p class="faq-question faq-question_reverse">
+                                Functional testing
+                                <svg class="faq-question__icon" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1.5L6 6.5L11 1.5" stroke="#1E1E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </p>
+                            <div class="faq-answer">
+                                <div class="faq-answer__inner"  >
+                                    <div class="faq-answer__text">
+                                        <p class="body-base">
+                                            Answer the frequently asked question in a simple sentence, a longish paragraph, or even in a list.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-qroup faq-qroup_clean">
+                            <p class="faq-question faq-question_reverse">
+                                Functional testing
+                                <svg class="faq-question__icon" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1.5L6 6.5L11 1.5" stroke="#1E1E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </p>
+                            <div class="faq-answer">
+                                <div class="faq-answer__inner"  >
+                                    <div class="faq-answer__text">
+                                        <p class="body-base">
+                                            Answer the frequently asked question in a simple sentence, a longish paragraph, or even in a list.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="container">
+        <div class="section-header section-header_mb">
+            <div class="section-header__heading">Reviews</div>
+        </div>
+        <div class="reviews-slider slider">
+            <div class="reviews-slider__wrapper swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="review">
+                        <div class="review__main">
+                            <p class="review__title">Title</p>
+                            <div class="rating">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="#F4B400" d="M9.99996 1.66675L12.575 6.88341L18.3333 7.72508L14.1666 11.7834L15.15 17.5167L9.99996 14.8084L4.84996 17.5167L5.83329 11.7834L1.66663 7.72508L7.42496 6.88341L9.99996 1.66675Z" stroke="#F4B400" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path fill="#F4B400" d="M9.99996 9.25424C10.3147 9.59611 10.6947 9.8721 11.1172 10.0657C10.8894 10.4702 10.7442 10.9163 10.6902 11.3774C10.2347 11.2858 9.76519 11.2858 9.30967 11.3774C9.25574 10.9163 9.11054 10.4702 8.88269 10.0657C9.3052 9.87209 9.68518 9.59611 9.99996 9.25424Z" stroke="#F4B400" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="#F4B400" d="M9.99996 1.66675L12.575 6.88341L18.3333 7.72508L14.1666 11.7834L15.15 17.5167L9.99996 14.8084L4.84996 17.5167L5.83329 11.7834L1.66663 7.72508L7.42496 6.88341L9.99996 1.66675Z" stroke="#F4B400" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path fill="#F4B400" d="M9.99996 9.25424C10.3147 9.59611 10.6947 9.8721 11.1172 10.0657C10.8894 10.4702 10.7442 10.9163 10.6902 11.3774C10.2347 11.2858 9.76519 11.2858 9.30967 11.3774C9.25574 10.9163 9.11054 10.4702 8.88269 10.0657C9.3052 9.87209 9.68518 9.59611 9.99996 9.25424Z" stroke="#F4B400" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="review__text">Description</p>
+                        <div class="review-user review-user_mt">
+                            <div class="review-user__logo">
+                                <img src="../images/hero/main-page.png" alt="logo">
+                            </div>
+                            <div class="review-user__data">
+                                <p class="body-strong name">Name</p>
+                                <p class="body-base date">Date</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="review">
+                        <div class="review__main">
+                            <p class="review__title">Title</p>
+                            <div class="rating">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="#F4B400" d="M9.99996 1.66675L12.575 6.88341L18.3333 7.72508L14.1666 11.7834L15.15 17.5167L9.99996 14.8084L4.84996 17.5167L5.83329 11.7834L1.66663 7.72508L7.42496 6.88341L9.99996 1.66675Z" stroke="#F4B400" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path fill="#F4B400" d="M9.99996 9.25424C10.3147 9.59611 10.6947 9.8721 11.1172 10.0657C10.8894 10.4702 10.7442 10.9163 10.6902 11.3774C10.2347 11.2858 9.76519 11.2858 9.30967 11.3774C9.25574 10.9163 9.11054 10.4702 8.88269 10.0657C9.3052 9.87209 9.68518 9.59611 9.99996 9.25424Z" stroke="#F4B400" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="#F4B400" d="M9.99996 1.66675L12.575 6.88341L18.3333 7.72508L14.1666 11.7834L15.15 17.5167L9.99996 14.8084L4.84996 17.5167L5.83329 11.7834L1.66663 7.72508L7.42496 6.88341L9.99996 1.66675Z" stroke="#F4B400" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path fill="#F4B400" d="M9.99996 9.25424C10.3147 9.59611 10.6947 9.8721 11.1172 10.0657C10.8894 10.4702 10.7442 10.9163 10.6902 11.3774C10.2347 11.2858 9.76519 11.2858 9.30967 11.3774C9.25574 10.9163 9.11054 10.4702 8.88269 10.0657C9.3052 9.87209 9.68518 9.59611 9.99996 9.25424Z" stroke="#F4B400" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="review__text">Description</p>
+                        <div class="review-user review-user_mt">
+                            <div class="review-user__logo">
+                                <img src="../images/hero/main-page.png" alt="logo">
+                            </div>
+                            <div class="review-user__data">
+                                <p class="body-strong name">Name</p>
+                                <p class="body-base date">Date</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="review">
+                        <div class="review__main">
+                            <p class="review__title">Title</p>
+                            <div class="rating">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="#F4B400" d="M9.99996 1.66675L12.575 6.88341L18.3333 7.72508L14.1666 11.7834L15.15 17.5167L9.99996 14.8084L4.84996 17.5167L5.83329 11.7834L1.66663 7.72508L7.42496 6.88341L9.99996 1.66675Z" stroke="#F4B400" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path fill="#F4B400" d="M9.99996 9.25424C10.3147 9.59611 10.6947 9.8721 11.1172 10.0657C10.8894 10.4702 10.7442 10.9163 10.6902 11.3774C10.2347 11.2858 9.76519 11.2858 9.30967 11.3774C9.25574 10.9163 9.11054 10.4702 8.88269 10.0657C9.3052 9.87209 9.68518 9.59611 9.99996 9.25424Z" stroke="#F4B400" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="#F4B400" d="M9.99996 1.66675L12.575 6.88341L18.3333 7.72508L14.1666 11.7834L15.15 17.5167L9.99996 14.8084L4.84996 17.5167L5.83329 11.7834L1.66663 7.72508L7.42496 6.88341L9.99996 1.66675Z" stroke="#F4B400" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path fill="#F4B400" d="M9.99996 9.25424C10.3147 9.59611 10.6947 9.8721 11.1172 10.0657C10.8894 10.4702 10.7442 10.9163 10.6902 11.3774C10.2347 11.2858 9.76519 11.2858 9.30967 11.3774C9.25574 10.9163 9.11054 10.4702 8.88269 10.0657C9.3052 9.87209 9.68518 9.59611 9.99996 9.25424Z" stroke="#F4B400" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="review__text">Description</p>
+                        <div class="review-user review-user_mt">
+                            <div class="review-user__logo">
+                                <img src="../images/hero/main-page.png" alt="logo">
+                            </div>
+                            <div class="review-user__data">
+                                <p class="body-strong name">Name</p>
+                                <p class="body-base date">Date</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="review">
+                        <div class="review__main">
+                            <p class="review__title">Title</p>
+                            <div class="rating">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="#F4B400" d="M9.99996 1.66675L12.575 6.88341L18.3333 7.72508L14.1666 11.7834L15.15 17.5167L9.99996 14.8084L4.84996 17.5167L5.83329 11.7834L1.66663 7.72508L7.42496 6.88341L9.99996 1.66675Z" stroke="#F4B400" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path fill="#F4B400" d="M9.99996 9.25424C10.3147 9.59611 10.6947 9.8721 11.1172 10.0657C10.8894 10.4702 10.7442 10.9163 10.6902 11.3774C10.2347 11.2858 9.76519 11.2858 9.30967 11.3774C9.25574 10.9163 9.11054 10.4702 8.88269 10.0657C9.3052 9.87209 9.68518 9.59611 9.99996 9.25424Z" stroke="#F4B400" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="#F4B400" d="M9.99996 1.66675L12.575 6.88341L18.3333 7.72508L14.1666 11.7834L15.15 17.5167L9.99996 14.8084L4.84996 17.5167L5.83329 11.7834L1.66663 7.72508L7.42496 6.88341L9.99996 1.66675Z" stroke="#F4B400" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path fill="#F4B400" d="M9.99996 9.25424C10.3147 9.59611 10.6947 9.8721 11.1172 10.0657C10.8894 10.4702 10.7442 10.9163 10.6902 11.3774C10.2347 11.2858 9.76519 11.2858 9.30967 11.3774C9.25574 10.9163 9.11054 10.4702 8.88269 10.0657C9.3052 9.87209 9.68518 9.59611 9.99996 9.25424Z" stroke="#F4B400" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="review__text">Description</p>
+                        <div class="review-user review-user_mt">
+                            <div class="review-user__logo">
+                                <img src="../images/hero/main-page.png" alt="logo">
+                            </div>
+                            <div class="review-user__data">
+                                <p class="body-strong name">Name</p>
+                                <p class="body-base date">Date</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-navigation">
+                <div class="swiper-pagination"></div>
+                <div class="slider-buttons">
+                    <div class="slider-btn reviews-slider__btn swiper-button-prev">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.6666 8.00002L3.33329 8.00002M3.33329 8.00002L7.99996 12.6667M3.33329 8.00002L7.99996 3.33335" stroke="#3C3C43" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>   
+                        Back
+                    </div>
+                    <div class="slider-btn reviews-slider__btn swiper-button-next">
+                        Next 
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.33337 7.99998L12.6667 7.99998M12.6667 7.99998L8.00004 3.33331M12.6667 7.99998L8.00004 12.6666" stroke="#3C3C43" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="container">
+        <div class="section-header section-header_mb">
+            <div class="section-header__heading">Our clients</div>
+        </div>
+        <div class="slider-wrapper">
+            <div class="clients-slider slider">
+                <div class="clients-slider__wrapper swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="" class="client-logo">
+                            <img class="client-logo__img" src="../images/client-logos/logo-1.png" alt="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="" class="client-logo">
+                            <img class="client-logo__img" src="../images/client-logos/logo-2.png" alt="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="" class="client-logo">
+                            <img class="client-logo__img" src="../images/client-logos/logo-2.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="slider-navigation">
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="slider-float-btn slider-float-btn_grey clients-slider__btn swiper-button-next">
+                <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.0727 6.14546L35.9272 26L16.0727 45.8546" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <div class="slider-float-btn slider-float-btn_grey clients-slider__btn swiper-button-prev">
+                <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M35.9273 45.8545L16.0728 26L35.9273 6.14545" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="container">
+        <div class="section-header section-header_mb">
+            <div class="section-header__heading">Articles</div>
+        </div>
+        <div class="grid-slider slider">
+            <div class="grid-slider__wrapper swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="article-card">
+                        <a href="" class="article-card__img-wrapper">
+                            <img class="article-card__img" src="../images/banner.png" alt="">
+                        </a>
+                        <div class="article-card__info-block">
+                            <div class="article-card-info">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.00065 1.33337C11.6827 1.33337 14.6673 4.31804 14.6673 8.00004C14.6673 11.682 11.6827 14.6667 8.00065 14.6667C4.31865 14.6667 1.33398 11.682 1.33398 8.00004C1.33398 4.31804 4.31865 1.33337 8.00065 1.33337ZM8.00065 2.66671C6.58616 2.66671 5.22961 3.22861 4.22941 4.2288C3.22922 5.229 2.66732 6.58555 2.66732 8.00004C2.66732 9.41453 3.22922 10.7711 4.22941 11.7713C5.22961 12.7715 6.58616 13.3334 8.00065 13.3334C9.41514 13.3334 10.7717 12.7715 11.7719 11.7713C12.7721 10.7711 13.334 9.41453 13.334 8.00004C13.334 6.58555 12.7721 5.229 11.7719 4.2288C10.7717 3.22861 9.41514 2.66671 8.00065 2.66671ZM8.00065 4.00004C8.16394 4.00006 8.32154 4.06001 8.44357 4.16852C8.56559 4.27702 8.64355 4.42654 8.66265 4.58871L8.66732 4.66671V7.72404L10.472 9.52871C10.5915 9.64868 10.661 9.80966 10.6661 9.97896C10.6713 10.1483 10.6118 10.3132 10.4998 10.4402C10.3878 10.5673 10.2316 10.6469 10.063 10.663C9.89439 10.679 9.72598 10.6303 9.59198 10.5267L9.52932 10.4714L7.52932 8.47137C7.4257 8.36767 7.35916 8.23271 7.33998 8.08737L7.33398 8.00004V4.66671C7.33398 4.4899 7.40422 4.32033 7.52925 4.1953C7.65427 4.07028 7.82384 4.00004 8.00065 4.00004Z" fill="#757575"/>
+                                </svg>
+                                2 months ago
+                            </div>
+                            <div class="article-card-info">
+                                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.66665 6C9.19709 6 9.7058 6.21071 10.0809 6.58579C10.4559 6.96086 10.6667 7.46957 10.6667 8C10.6667 8.53043 10.4559 9.03914 10.0809 9.41421C9.7058 9.78929 9.19709 10 8.66665 10C8.13622 10 7.62751 9.78929 7.25244 9.41421C6.87737 9.03914 6.66665 8.53043 6.66665 8C6.66665 7.46957 6.87737 6.96086 7.25244 6.58579C7.62751 6.21071 8.13622 6 8.66665 6ZM8.66665 3C12 3 14.8467 5.07333 16 8C14.8467 10.9267 12 13 8.66665 13C5.33332 13 2.48665 10.9267 1.33332 8C2.48665 5.07333 5.33332 3 8.66665 3ZM2.78665 8C3.32549 9.1002 4.16219 10.0272 5.20164 10.6755C6.24109 11.3238 7.44158 11.6675 8.66665 11.6675C9.89172 11.6675 11.0922 11.3238 12.1317 10.6755C13.1711 10.0272 14.0078 9.1002 14.5467 8C14.0078 6.8998 13.1711 5.97283 12.1317 5.3245C11.0922 4.67616 9.89172 4.33245 8.66665 4.33245C7.44158 4.33245 6.24109 4.67616 5.20164 5.3245C4.16219 5.97283 3.32549 6.8998 2.78665 8Z" fill="#757575"/>
+                                </svg>                                    
+                                1 million views
+                            </div>
+                        </div>
+                        <div class="article-card__main">
+                            <a href="" class="article-card__title">An article with a very long title in 2 lines</a>
+                            <a href="" class="article-card__description">Description of the service. The description of the service is as wide as this: and this is how it happens like this...</a>
+                        </div>
+                        <ul class="tags article-card__tags">
+                            <li class="tag">
+                                <a href="" class="tag__link">Read 12 minutes</a>
+                            </li>
+                            <li class="tag">
+                                <a href="" class="tag__link">New</a>
+                            </li>
+                            <li class="tag">
+                                <a href="" class="tag__link">Subject</a>
+                            </li>
+                        </ul>
+                        <div class="article-card__bottom">
+                            <div class="article-card-info">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_316_10333)">
+                                    <path d="M7.00065 13.4166C6.84594 13.4166 6.69757 13.3551 6.58817 13.2457C6.47878 13.1363 6.41732 12.988 6.41732 12.8333V11.0833H4.08398C3.77457 11.0833 3.47782 10.9603 3.25903 10.7415C3.04023 10.5228 2.91732 10.226 2.91732 9.91659V4.08325C2.91732 3.77383 3.04023 3.47709 3.25903 3.25829C3.47782 3.0395 3.77457 2.91659 4.08398 2.91659H12.2507C12.5601 2.91659 12.8568 3.0395 13.0756 3.25829C13.2944 3.47709 13.4173 3.77383 13.4173 4.08325V9.91659C13.4173 10.226 13.2944 10.5228 13.0756 10.7415C12.8568 10.9603 12.5601 11.0833 12.2507 11.0833H9.85898L7.70065 13.2474C7.58398 13.3583 7.43815 13.4166 7.29232 13.4166H7.00065ZM7.58398 9.91659V11.7133L9.38065 9.91659H12.2507V4.08325H4.08398V9.91659H7.58398ZM1.75065 8.74992H0.583984V1.74992C0.583984 1.4405 0.706901 1.14375 0.925693 0.924961C1.14449 0.706168 1.44123 0.583252 1.75065 0.583252H11.084V1.74992H1.75065V8.74992Z" fill="#757575"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_316_10333">
+                                    <rect width="14" height="14" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                                344 comments
+                            </div>
+                            <a href="" class="btn article-card__btn">
+                                Read →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+              
+            </div>
+            <div class="slider-navigation">
+                <div class="swiper-pagination"></div>
+                <div class="slider-buttons">
+                    <div class="slider-btn grid-slider__btn swiper-button-prev">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.6666 8.00002L3.33329 8.00002M3.33329 8.00002L7.99996 12.6667M3.33329 8.00002L7.99996 3.33335" stroke="#3C3C43" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>   
+                        Back
+                    </div>
+                    <div class="slider-btn grid-slider__btn swiper-button-next">
+                        Next 
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.33337 7.99998L12.6667 7.99998M12.6667 7.99998L8.00004 3.33331M12.6667 7.99998L8.00004 12.6666" stroke="#3C3C43" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="" class="btn btn_center">See all</a>
+    </div>
+</section>
+<section class="section">
+    <div class="container">
+        <div class="section-header section-header_mb">
+            <div class="section-header__heading section-header__heading_center">
+                We answer your questions
+            </div>
+        </div>
+        <div class="faq faq_limited">
+            <div class="faq__column">
+                <div class="faq-qroup">
+                    <p class="faq-question">
+                        Header
+                        <svg class="faq-question__icon" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1.5L6 6.5L11 1.5" stroke="#1E1E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </p>
+                    <div class="faq-answer">
+                        <div class="faq-answer__inner"  >
+                            <div class="faq-answer__text">
+                                <p class="body-base">
+                                    Answer the frequently asked question in a simple sentence, a longish paragraph, or even in a list.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-qroup">
+                    <p class="faq-question">
+                        Header
+                        <svg class="faq-question__icon" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1.5L6 6.5L11 1.5" stroke="#1E1E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </p>
+                    <div class="faq-answer">
+                        <div class="faq-answer__inner"  >
+                            <div class="faq-answer__text">
+                                <p class="body-base">
+                                    Answer the frequently asked question in a simple sentence, a longish paragraph, or even in a list.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> 
+<div class="banner">
+    <img class="banner__img" src="../images/banner.png" alt="fon">
+    <div class="container banner__container">
+        <div class="banner__inner">
+            <div class="banner__title">Set yourself up for success!</div>
+            <div class="banner__bottom">
+                Start right away
+                <button class="btn banner__btn">Start</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="form-block">
+    <div class="container">
+        <div class="form-block__inner">
+            <h2 class="form-block__title">Feedback form</h2>
+            <form id="vacancy-form" action="" class="form">
+                <div class="form__main">
+                    <div class="form__column">
+                        <div class="input-group required" id="name">
+                            <label class="body-base">Your full name *</label>
+                            <input type="text" name="" placeholder="Abramov Ivan Sergeevich">
+                        </div>
+                        <div class="input-group required" id="email">
+                            <label class="body-base">Email <sup>*</sup></label>
+                            <input type="text" name="" placeholder="Ivan13@mail.com">
+                        </div>
+                        <div class="input-group required" id="email">
+                            <label class="body-base">Phone number</label>
+                            <input type="text" name="tel" placeholder="+ 7( 989 )000-00-00">
+                        </div>
+                    </div>
+                    <div class="form__column">
+                        <div class="input-group" id="comment">
+                            <label class="body-base">Comment</label>
+                            <textarea name="" placeholder="Message"></textarea>
+                        </div>
+                        <div class="attach-document-area">
+                            <label id="attach-document" class="attach-document">
+                                <svg class="attach-document__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V9M13 2L20 9M13 2V9H20" stroke="#1E1E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                Attach your project document
+                                (file should not be larger than 20 MB)
+                                <input class="attach-document__input" hidden type="file" name="file">
+                            </label>
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="form__policy">
+                    <div class="form__policy-group">
+                        <input type="checkbox" class="custom-checkbox" id="policy" value="1">
+                        <label class="body-base" for="policy">I agree to the processing of personal data</label>
+                    </div>
+                    <a href="#" class="body-link">Privacy Policy</a>
+                </div>
+                <button class="btn form__btn">Send Request</button>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="newsletter">
+    <img class="newsletter__img" src="../images/newsletter.png" alt="fon">
+    <div class="container newsletter__container">
+        <div class="newsletter__inner">
+            <div class="newsletter__content">
+                <div class="newsletter__title">Subscribe to the newsletter</div>
+                <div class="description">Description</div>
+            </div>
+            <form class="newsletter__form">
+                <input class="input newsletter__input" type="text" placeholder="you@example.com">
+                </label>
+                <button class="btn newsletter__btn">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer-main">
+                <a href="#" class="logo">
+                    <img src="../images/logo.svg" alt="" width="178" height="56">
+                </a>
+                <div class="footer-group">
+                    <div class="footer-group__title">Navigation</div>
+                    <ul class="nav-list nav-list_default">
+                        <li><a href="#" class="nav-link">Services</a></li>
+                        <li><a href="#" class="nav-link">News</a></li>
+                        <li><a href="#" class="nav-link">Blog</a></li>
+                        <li><a href="#" class="nav-link">About Us</a></li>
+                        <li><a href="#" class="nav-link">Awards</a></li>
+                        <li><a href="#" class="nav-link">Teams</a></li>
+                        <li><a href="#" class="nav-link">Career</a></li>
+                        <li><a href="#" class="nav-link">Reviews</a></li>
+                        <li><a href="#" class="nav-link">Contacts</a></li>
+                    </ul>
+                </div>
+                <div class="footer-group">
+                    <div class="footer-group__title">For users</div>
+                    <ul class="nav-list nav-list_default">
+                        <li><a href="#" class="nav-link">Processing of personal data</a></li>
+                        <li><a href="#" class="nav-link">Privacy Policy</a></li>
+                        <li><a href="#" class="nav-link">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div class="footer__column">
+                    <div class="footer-group">
+                        <div class="footer-group__title">Contact details</div>
+                        <div class="footer-box">
+                            <a class="text footer-box__link" href="email:Infomail@mail.com">Infomail@mail.com</a>
+                            <a class="text footer-box__link" href="">+7 (999)-000-00-00</a>
+                            <div class="networks-group">
+                                <a class="networks-group__item" href="#">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="24" height="24" fill="white"/>
+                                        <g clip-path="url(#clip0_309_9165)">
+                                        <path d="M9.68805 13.886L9.3903 18.074C9.81631 18.074 10.0008 17.891 10.2221 17.6713L12.2194 15.7625L16.358 18.7933C17.117 19.2163 17.6517 18.9935 17.8565 18.095L20.5731 5.36605C20.8139 4.24405 20.168 3.80456 19.4285 4.0798L3.46065 10.193C2.37088 10.616 2.38738 11.2235 3.2754 11.4988L7.35775 12.7685L16.8403 6.83529C17.2865 6.53979 17.6923 6.70329 17.3585 6.99879L9.68805 13.886Z" fill="black"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_309_9165">
+                                        <rect width="20" height="15" fill="white" transform="translate(2 4)"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>
+                                </a>
+                                <a class="networks-group__item" href="#">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="24" height="24" fill="white"/>
+                                        <g clip-path="url(#clip0_309_9169)">
+                                        <path d="M4.26923 8.70284C4.49006 8.85866 5.15569 9.32146 6.26619 10.091C7.37672 10.8605 8.22746 11.4531 8.81845 11.8686C8.88338 11.9142 9.02133 12.0132 9.23236 12.1658C9.44343 12.3185 9.61879 12.4419 9.75835 12.5361C9.898 12.6302 10.0668 12.7357 10.265 12.8526C10.4631 12.9693 10.6498 13.0572 10.8252 13.1153C11.0005 13.1739 11.1629 13.203 11.3122 13.203H11.3319C11.4812 13.203 11.6436 13.1739 11.819 13.1153C11.9942 13.0572 12.1812 12.9692 12.3791 12.8526C12.5771 12.7356 12.7459 12.6301 12.8856 12.5361C13.0252 12.4419 13.2004 12.3185 13.4117 12.1658C13.6226 12.013 13.7607 11.9142 13.8257 11.8686C14.423 11.4531 15.9428 10.3977 18.3845 8.70264C18.8586 8.37157 19.2547 7.9721 19.5728 7.50448C19.8913 7.03708 20.0503 6.54674 20.0503 6.03375C20.0503 5.60507 19.896 5.23811 19.5874 4.93292C19.279 4.62765 18.9137 4.4751 18.4916 4.4751H4.15231C3.65228 4.4751 3.26748 4.64392 2.99797 4.98157C2.72849 5.31929 2.59375 5.74142 2.59375 6.24792C2.59375 6.65706 2.7724 7.1004 3.12953 7.57771C3.48663 8.05504 3.86665 8.43012 4.26923 8.70284Z" fill="black"/>
+                                        <path d="M19.076 9.74566C16.9461 11.1872 15.3288 12.3076 14.225 13.1065C13.8548 13.3792 13.5545 13.592 13.3239 13.7445C13.0933 13.8971 12.7866 14.0529 12.4034 14.212C12.0203 14.3713 11.6632 14.4506 11.332 14.4506H11.3123C10.9811 14.4506 10.6238 14.3713 10.2407 14.212C9.85763 14.0529 9.55073 13.8971 9.32018 13.7445C9.0897 13.592 8.78931 13.3792 8.41918 13.1065C7.54241 12.4636 5.92862 11.3432 3.57773 9.74566C3.20746 9.49904 2.8795 9.21636 2.59375 8.89819V16.6327C2.59375 17.0615 2.7463 17.4282 3.05157 17.7335C3.35677 18.0388 3.72377 18.1914 4.15241 18.1914H18.4918C18.9203 18.1914 19.2873 18.0388 19.5925 17.7335C19.8978 17.4281 20.0503 17.0616 20.0503 16.6327V8.89819C19.771 9.20977 19.4464 9.49246 19.076 9.74566Z" fill="black"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_309_9169">
+                                        <rect width="19" height="15" fill="white" transform="translate(2 4)"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>                                
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-group text">
+                        <div class="footer-group__title">Opening hours</div>
+                        From Mon-Mon from 9:00-18:00<br>
+                        Sat and Sun days off
+                    </div>
+                    <div class="footer-group text">
+                        <div class="footer-group__title">Address</div>
+                        Moscow, Pervomayskaya street 164/2
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <p class="footer-bottom__text">© 2024 Organization name</p>
+        </div>
+    </div>
+</footer>          
+
+
+<script src="js/handlers.js"></script>
+</body>
+</html>
