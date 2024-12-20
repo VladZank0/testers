@@ -14,7 +14,7 @@ function init(){
     function createPlacemark(cords){
         let placemark = new ymaps.Placemark(cords, { balloonContentBody: 'Название объекта <br> Рейтинг: 4.5'}, {
             iconLayout: 'default#image',
-            // iconImageHref: '../images/main-page/map_placemark.png',
+            // iconImageHref: 'images/main-page/map_placemark.png',
             iconImageSize: [66, 71],
             iconOffset: [-26, -26],
             // balloonContent: content,
